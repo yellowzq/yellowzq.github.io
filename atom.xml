@@ -6,7 +6,7 @@
   <link href="http://rgzzplus.com/atom.xml" rel="self"/>
   
   <link href="http://rgzzplus.com/"/>
-  <updated>2022-03-11T09:35:46.550Z</updated>
+  <updated>2022-03-11T09:41:31.281Z</updated>
   <id>http://rgzzplus.com/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="http://rgzzplus.com/2022/03/11/hello-world/"/>
     <id>http://rgzzplus.com/2022/03/11/hello-world/</id>
     <published>2022-03-11T05:26:57.197Z</published>
-    <updated>2022-03-11T09:35:46.550Z</updated>
+    <updated>2022-03-11T09:41:31.281Z</updated>
     
     <content type="html"><![CDATA[<h2 id="welcome-to-my-blog"><a class="markdownIt-Anchor" href="#welcome-to-my-blog"></a> Welcome to my Blog.</h2>]]></content>
     
@@ -67,7 +67,7 @@
     <link href="http://rgzzplus.com/2022/03/10/typora%E5%BF%AB%E6%8D%B7%E9%94%AE/"/>
     <id>http://rgzzplus.com/2022/03/10/typora%E5%BF%AB%E6%8D%B7%E9%94%AE/</id>
     <published>2022-03-10T03:23:58.000Z</published>
-    <updated>2022-03-11T09:37:17.041Z</updated>
+    <updated>2022-03-11T09:40:42.155Z</updated>
     
     <content type="html"><![CDATA[<p>无序列表：输入-之后输入空格</p><p>有序列表：输入数字+“.”之后输入空格</p><p>任务列表：-[空格]空格 文字</p><p>标题：ctrl+数字</p><p>表格：ctrl+t</p><p>生成目录：[TOC]按回车</p><p>选中一整行：ctrl+l</p><p>选中单词：ctrl+d</p><p>选中相同格式的文字：ctrl+e</p><p>跳转到文章开头：ctrl+home</p><p>跳转到文章结尾：ctrl+end</p><p>搜索：ctrl+f</p><p>替换：ctrl+h</p><p>引用：输入&gt;之后输入空格</p><p>代码块：ctrl+alt+f</p><p>加粗：ctrl+b</p><p>倾斜：ctrl+i</p><p>下划线：ctrl+u</p><p>删除线：alt+shift+5</p><p>插入图片：直接拖动到指定位置即可或者ctrl+shift+i</p><p>插入链接：ctrl+k</p>]]></content>
     
