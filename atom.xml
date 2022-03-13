@@ -6,7 +6,7 @@
   <link href="http://rgzzplus.com/atom.xml" rel="self"/>
   
   <link href="http://rgzzplus.com/"/>
-  <updated>2022-03-11T11:16:41.224Z</updated>
+  <updated>2022-03-13T09:41:59.550Z</updated>
   <id>http://rgzzplus.com/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Linux二级目录</title>
+    <link href="http://rgzzplus.com/2022/03/13/linux%E4%BA%8C%E7%BA%A7%E7%9B%AE%E5%BD%95/"/>
+    <id>http://rgzzplus.com/2022/03/13/linux%E4%BA%8C%E7%BA%A7%E7%9B%AE%E5%BD%95/</id>
+    <published>2022-03-13T09:37:43.000Z</published>
+    <updated>2022-03-13T09:41:59.550Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="linux二级目录"><a class="markdownIt-Anchor" href="#linux二级目录"></a> Linux二级目录</h1><ul><li>/bin 存放二进制可以执行命令文件，‘binary’ 二进制</li><li>/sbin 存放超级管理员可执行的一些权限和命令，‘system binary’</li><li>/boot 存放Linux系统启动的文件，启动配置以及内核的镜像 ‘boot’ 引导</li><li>/dev 存放系统下的所有设备文件，‘device’ 设备</li><li>/etc 存放系统配置文件，意思是等等，etc来源</li><li>/home 普通用户家目录 类似 windows 的 c:user 目录</li><li>/lib 存放系统使用函数库的目录，‘library’ 图书馆，库</li><li>/media 软盘或者光盘等的挂载点，‘media’ 媒体，介质</li><li>/mnt 硬盘默认挂载目录，‘mount’ 嵌入</li><li>/opt 自定义(第三方)软件安装位置，‘optional’ 可选择</li><li>/proc 一个虚拟的文件系统(只存在内存中，不是实际贮存在磁盘上的)，包括被某些程序使用的系统信息，‘process’ 进程</li><li>/root 超级用户家目录，‘root’ 根,(注:它不是系统的根&quot;/&quot; )</li><li>/run 运行时的一些临时文件，‘run’ 运行</li><li>/srv 存放服务启动后所需数据，‘service’ 服务</li><li>/sys 存放系统内核信息文件，‘system’ 系统</li><li>/tmp 系统临时文件目录，重启清除，‘temporary’ 临时的</li><li>/usr 操作系统软件资源所放置的目录，即系统默认软件放置位置，‘Unix Software Resource’</li><li>/var 系统产生经常变化的文件目录，‘variable’ 可变的</li></ul>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;linux二级目录&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#linux二级目录&quot;&gt;&lt;/a&gt; Linux二级目录&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;/bin 存放二进制可以执行命令文件，‘binary’ 二进制&lt;/li&gt;
+&lt;li&gt;/sbi</summary>
+      
+    
+    
+    
+    <category term="学习笔记" scheme="http://rgzzplus.com/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    
+    
+    <category term="Linux" scheme="http://rgzzplus.com/tags/Linux/"/>
+    
+  </entry>
   
   <entry>
     <title>起源</title>
