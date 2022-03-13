@@ -6,7 +6,7 @@
   <link href="http://rgzzplus.com/atom.xml" rel="self"/>
   
   <link href="http://rgzzplus.com/"/>
-  <updated>2022-03-13T09:41:59.550Z</updated>
+  <updated>2022-03-13T14:26:11.837Z</updated>
   <id>http://rgzzplus.com/</id>
   
   <author>
@@ -17,21 +17,68 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>demo</title>
+    <link href="http://rgzzplus.com/2022/03/13/demo/"/>
+    <id>http://rgzzplus.com/2022/03/13/demo/</id>
+    <published>2022-03-13T14:23:37.000Z</published>
+    <updated>2022-03-13T14:26:11.837Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="这是一个测试文章"><a class="markdownIt-Anchor" href="#这是一个测试文章"></a> 这是一个测试文章</h1><p><img src="demo/kawayi.png" alt="kawayi" /></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;这是一个测试文章&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#这是一个测试文章&quot;&gt;&lt;/a&gt; 这是一个测试文章&lt;/h1&gt;
+&lt;p&gt;&lt;img src=&quot;demo/kawayi.png&quot; alt=&quot;kawayi&quot; /&gt;&lt;/p&gt;
+</summary>
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>hexo写作</title>
+    <link href="http://rgzzplus.com/2022/03/13/hexo%E5%86%99%E4%BD%9C/"/>
+    <id>http://rgzzplus.com/2022/03/13/hexo%E5%86%99%E4%BD%9C/</id>
+    <published>2022-03-13T10:09:13.000Z</published>
+    <updated>2022-03-13T14:22:08.821Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="创建新文章"><a class="markdownIt-Anchor" href="#创建新文章"></a> 创建新文章</h1><p>在命令行中输入：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new [layout] &lt;title&gt;</span><br></pre></td></tr></table></figure><p>如果没有设置 <code>layout</code> 的话，默认使用 <a href="https://hexo.io/zh-cn/docs/configuration">_config.yml</a> 中的 <code>default_layout</code> 参数代替。（默认在博客文件夹下的source文件夹）如果标题包含空格的话，请使用引号括起来。</p><table><thead><tr><th style="text-align:left">参数</th><th style="text-align:left">描述</th></tr></thead><tbody><tr><td style="text-align:left"><code>-p</code>, <code>--path</code></td><td style="text-align:left">自定义新文章的路径</td></tr><tr><td style="text-align:left"><code>-r</code>, <code>--replace</code></td><td style="text-align:left">如果存在同名文章，将其替换</td></tr><tr><td style="text-align:left"><code>-s</code>, <code>--slug</code></td><td style="text-align:left">文章的 Slug，作为新文章的文件名和发布后的 URL</td></tr></tbody></table><h1 id="创建草稿"><a class="markdownIt-Anchor" href="#创建草稿"></a> 创建草稿</h1><p>在命令行中输入：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new draft &lt;title&gt;</span><br></pre></td></tr></table></figure><p>如果你从未使用过草稿功能，这条指令会自动在博客文件夹下的<code>source文件夹</code>内创建一个<code>_draft文件夹</code>，以后你创建的草稿都会被保存到这个文件夹下。同时这条指令也是创建草稿的命令。<code>title</code>标题如果有空格也是要用引号括起来的。</p><p>然后你就可以到<code>_draft</code>文件里用编辑器编辑文件。</p><h1 id="发表草稿"><a class="markdownIt-Anchor" href="#发表草稿"></a> 发表草稿</h1><p>在命令行中输入：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo publish [layout] &lt;filename&gt;</span><br></pre></td></tr></table></figure><p>在编辑完文件后，就要发表文章，就是把草稿变成新文章，实际上是将草稿文件从<code>source/_draft</code>移动到<code>source/_posts</code>。<code>layout</code>默认就是<code>source/_posts</code>，<code>filename</code>是你要发表的文件名。如果你是按照上面创建的草稿，那<code>filename</code>就是<code>title</code>。</p><h1 id="预览文章"><a class="markdownIt-Anchor" href="#预览文章"></a> 预览文章</h1><p>在命令行中输入：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hexo g</span><br><span class="line">hexo s</span><br></pre></td></tr></table></figure><p><code>hexo g</code>是<code>hexo generate</code>的缩写，生成静态文件。</p><p><code>hexo s</code>是<code>hexo server</code>的缩写，启动服务器。默认情况下，访问网址为： <code>http://localhost:4000/</code></p><p>在将文章上传到网站前，我们要想预览一下效果，看看文章在网站上好不好看，排版是否清晰，就输入上面两条指令先进行本地渲染。然后再浏览器中输入上面的网址，就能访问本地服务器来预览网站了。</p><h1 id="发表文章"><a class="markdownIt-Anchor" href="#发表文章"></a> 发表文章</h1><p>在命令行中输入：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hexo g</span><br><span class="line">hexo d</span><br></pre></td></tr></table></figure><p><code>hexo d</code>是<code>hexo deploy</code>的缩写，部署网站，即把文章上传到网站中。</p><blockquote><p><strong>参考链接</strong></p><ul><li><a href="https://hexo.io/zh-cn/docs/">hexo官方文档</a></li></ul></blockquote>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;创建新文章&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#创建新文章&quot;&gt;&lt;/a&gt; 创建新文章&lt;/h1&gt;
+&lt;p&gt;在命令行中输入：&lt;/p&gt;
+&lt;figure class=&quot;highlight plaintext&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td</summary>
+      
+    
+    
+    
+    <category term="学习笔记" scheme="http://rgzzplus.com/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    
+    
+    <category term="hexo" scheme="http://rgzzplus.com/tags/hexo/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Linux二级目录</title>
     <link href="http://rgzzplus.com/2022/03/13/linux%E4%BA%8C%E7%BA%A7%E7%9B%AE%E5%BD%95/"/>
     <id>http://rgzzplus.com/2022/03/13/linux%E4%BA%8C%E7%BA%A7%E7%9B%AE%E5%BD%95/</id>
     <published>2022-03-13T09:37:43.000Z</published>
-    <updated>2022-03-13T09:41:59.550Z</updated>
+    <updated>2022-03-13T09:49:08.227Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="linux二级目录"><a class="markdownIt-Anchor" href="#linux二级目录"></a> Linux二级目录</h1><ul><li>/bin 存放二进制可以执行命令文件，‘binary’ 二进制</li><li>/sbin 存放超级管理员可执行的一些权限和命令，‘system binary’</li><li>/boot 存放Linux系统启动的文件，启动配置以及内核的镜像 ‘boot’ 引导</li><li>/dev 存放系统下的所有设备文件，‘device’ 设备</li><li>/etc 存放系统配置文件，意思是等等，etc来源</li><li>/home 普通用户家目录 类似 windows 的 c:user 目录</li><li>/lib 存放系统使用函数库的目录，‘library’ 图书馆，库</li><li>/media 软盘或者光盘等的挂载点，‘media’ 媒体，介质</li><li>/mnt 硬盘默认挂载目录，‘mount’ 嵌入</li><li>/opt 自定义(第三方)软件安装位置，‘optional’ 可选择</li><li>/proc 一个虚拟的文件系统(只存在内存中，不是实际贮存在磁盘上的)，包括被某些程序使用的系统信息，‘process’ 进程</li><li>/root 超级用户家目录，‘root’ 根,(注:它不是系统的根&quot;/&quot; )</li><li>/run 运行时的一些临时文件，‘run’ 运行</li><li>/srv 存放服务启动后所需数据，‘service’ 服务</li><li>/sys 存放系统内核信息文件，‘system’ 系统</li><li>/tmp 系统临时文件目录，重启清除，‘temporary’ 临时的</li><li>/usr 操作系统软件资源所放置的目录，即系统默认软件放置位置，‘Unix Software Resource’</li><li>/var 系统产生经常变化的文件目录，‘variable’ 可变的</li></ul>]]></content>
+    <content type="html"><![CDATA[<h1 id="linux二级目录"><a class="markdownIt-Anchor" href="#linux二级目录"></a> Linux二级目录</h1><ul><li>/bin    存放二进制<strong>可执行文件</strong>，‘binary’ 二进制</li><li>/sbin    存放超级管理员可执行的一些<strong>权限和命令</strong>，‘system binary’</li><li>/boot    存放Linux<strong>系统启动的文件</strong>，启动配置以及内核的镜像 ‘boot’ 引导</li><li>/dev    存放系统下的所有<strong>设备文件</strong>，‘device’ 设备</li><li>/etc    存放<strong>系统配置文件</strong>，意思是等等，<strong>etc来源</strong>见文末</li><li>/home    <strong>普通用户家目录</strong> 类似 windows 的 c:user 目录</li><li>/lib    存放系统使用<strong>函数库</strong>的目录，‘library’ 图书馆，库</li><li>/media    <strong>软盘</strong>或者<strong>光盘</strong>等的<strong>挂载点</strong>，‘media’ 媒体，介质</li><li>/mnt    <strong>硬盘</strong>默认<strong>挂载目录</strong>，‘mount’ 嵌入</li><li>/opt    自定义(第三方)<strong>软件安装位置</strong>，‘optional’ 可选择</li><li>/proc    一个<strong>虚拟的文件系统</strong>(只存在内存中，不是实际贮存在磁盘上的)，包括被某些程序使用的<strong>系统信息</strong>，‘process’ 进程</li><li>/root    <strong>超级用户家目录</strong>，‘root’ 根,(注:它不是系统的根&quot;/&quot; )</li><li>/run    <strong>运行</strong>时的一些<strong>临时文件</strong>，‘run’ 运行</li><li>/srv    存放<strong>服务</strong>启动后所需<strong>数据</strong>，‘service’ 服务</li><li>/sys    存放<strong>系统内核信息</strong>文件，‘system’ 系统</li><li>/tmp    <strong>系统临时文件</strong>目录，<strong>重启清除</strong>，‘temporary’ 临时的</li><li>/usr    操作系统软件资源所放置的目录，即<strong>系统默认软件放置位置</strong>，‘Unix Software Resource’</li><li>/var    系统产生<strong>经常变化的文件</strong>目录，‘variable’ 可变的</li></ul><p>“<strong>etc来源</strong>”: etc不是什么缩写，是and so on的意思，来源于法语的 et cetera 翻译成中文就是 等等 的意思. 至于为什么在/etc下面存放配置文件， 按照原始的UNIX的说法 ( Linux文件结构参考UNIX的教学实现MINIX ) 这下面放的都是一堆零零碎碎的东西, 就叫etc, 这其实是个历史遗留.这个是来源于拉丁语全称etcetera.   n.等等之人（或物），附加的人（或物）；加s：附加（或额外）的项目；零星杂物。或者分开的et cetera, adv. 等等，以及其他等等（略作etc.或＆c.）但得注意，人名后不宜用，要用and others。这个目录在LINUX里很重要哦，里面装的都是些杂七杂八的配置文件。</p>]]></content>
     
     
       
       
     <summary type="html">&lt;h1 id=&quot;linux二级目录&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#linux二级目录&quot;&gt;&lt;/a&gt; Linux二级目录&lt;/h1&gt;
 &lt;ul&gt;
-&lt;li&gt;/bin 存放二进制可以执行命令文件，‘binary’ 二进制&lt;/li&gt;
-&lt;li&gt;/sbi</summary>
+&lt;li&gt;/bin    存放二进制&lt;strong&gt;可执行文件&lt;/strong&gt;，‘binary’ </summary>
       
     
     
