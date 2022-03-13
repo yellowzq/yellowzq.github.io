@@ -6,7 +6,7 @@
   <link href="http://rgzzplus.com/atom.xml" rel="self"/>
   
   <link href="http://rgzzplus.com/"/>
-  <updated>2022-03-13T14:26:11.837Z</updated>
+  <updated>2022-03-13T14:22:08.821Z</updated>
   <id>http://rgzzplus.com/</id>
   
   <author>
@@ -15,28 +15,6 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
-  
-  <entry>
-    <title>demo</title>
-    <link href="http://rgzzplus.com/2022/03/13/demo/"/>
-    <id>http://rgzzplus.com/2022/03/13/demo/</id>
-    <published>2022-03-13T14:23:37.000Z</published>
-    <updated>2022-03-13T14:26:11.837Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="这是一个测试文章"><a class="markdownIt-Anchor" href="#这是一个测试文章"></a> 这是一个测试文章</h1><p><img src="demo/kawayi.png" alt="kawayi" /></p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;h1 id=&quot;这是一个测试文章&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#这是一个测试文章&quot;&gt;&lt;/a&gt; 这是一个测试文章&lt;/h1&gt;
-&lt;p&gt;&lt;img src=&quot;demo/kawayi.png&quot; alt=&quot;kawayi&quot; /&gt;&lt;/p&gt;
-</summary>
-      
-    
-    
-    
-    
-  </entry>
   
   <entry>
     <title>hexo写作</title>
