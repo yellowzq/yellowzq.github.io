@@ -6,7 +6,7 @@
   <link href="http://rgzzplus.com/atom.xml" rel="self"/>
   
   <link href="http://rgzzplus.com/"/>
-  <updated>2022-03-13T14:22:08.821Z</updated>
+  <updated>2022-03-15T10:10:08.177Z</updated>
   <id>http://rgzzplus.com/</id>
   
   <author>
@@ -15,6 +15,37 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>linux指令</title>
+    <link href="http://rgzzplus.com/2022/03/15/linux%E6%8C%87%E4%BB%A4/"/>
+    <id>http://rgzzplus.com/2022/03/15/linux%E6%8C%87%E4%BB%A4/</id>
+    <published>2022-03-15T10:02:50.000Z</published>
+    <updated>2022-03-15T10:10:08.177Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="linux-命令"><a class="markdownIt-Anchor" href="#linux-命令"></a> Linux 命令</h3><table><thead><tr><th>名字</th><th>语法</th><th>用法</th><th>全称或备注</th></tr></thead><tbody><tr><td>.</td><td></td><td>当前目录</td><td></td></tr><tr><td>…</td><td></td><td>上级目录</td><td></td></tr><tr><td>~</td><td></td><td>用户主目录</td><td>普通用户的主目录为/home；<br>超级用户的主目录为/root</td></tr><tr><td>-</td><td></td><td>前一个工作目录</td><td></td></tr><tr><td>/</td><td></td><td>表示根目录</td><td></td></tr><tr><td>cd</td><td>cd [相对路径或绝对路径]</td><td>切换到目标工作目录</td><td>change directory</td></tr><tr><td>pwd</td><td>pwd</td><td>查看或打印当前目录</td><td>print working directory</td></tr><tr><td>type</td><td>type [命令名]</td><td>用来显示指定命令类型</td><td></td></tr><tr><td>ls</td><td>ls</td><td>显示当前目录下的文件</td><td></td></tr><tr><td>ll</td><td>ll</td><td>显示当前目录下文件详细信息</td><td>ls -l --color=auto</td></tr><tr><td>ll -a</td><td>ll -a</td><td>显示当前目录下文件及隐藏文件详细信息</td><td></td></tr><tr><td>mkdir</td><td>mkdir -p a/b/c/d/e/f 会自动创建文件父目录<br>mkdir -p lucky/{1234}ls 一次可以创建多个子目录</td><td>创建文件目录</td><td>make directory</td></tr><tr><td>rm</td><td>rm -rf [目录名]</td><td>删除文件夹，强制删除</td><td>remove</td></tr><tr><td>rmdir</td><td>rmdir [目录名]</td><td>删除文件目录，要求该文件夹是空文件夹</td><td>remove directory</td></tr><tr><td></td><td></td><td></td><td></td></tr><tr><td>cp</td><td>cp [选项] 源路径 存放路径<br>cp 源路径 存放路径</td><td>拷贝文件到文件夹，复制</td><td>copy</td></tr><tr><td>*</td><td>shiren*</td><td>所有以’shiren’开头的文件夹</td><td></td></tr><tr><td>mv</td><td>mv 源路径 存放路径</td><td>1、移动文件到文件夹，剪切<br>2、修改文件名字</td><td>move</td></tr><tr><td>touch</td><td>touch 文件名</td><td>如果没有该文件，则创建新文件；如果有该文件，则修改该文件的三个时间</td><td></td></tr><tr><td>stat</td><td></td><td>文件属性</td><td>state</td></tr><tr><td>cat</td><td>cat 文件名</td><td>正序查看文件内容</td><td></td></tr><tr><td>tac</td><td>tac 文件名</td><td>倒序查看文件内容</td><td></td></tr><tr><td>more</td><td>more 文件名</td><td>分页查看文件内容</td><td>敲回车，一行行显示后续内容；敲 ‘b’ 返回上一行；敲空格，一页页显示后续内容；敲 ‘h’ 显示帮助，更多指令</td></tr><tr><td>less</td><td>less 文件名</td><td>与more功能基本一样，区别是less的操作命令更多</td><td></td></tr><tr><td>head</td><td>head -10 文件名</td><td>查看文件前10行</td><td></td></tr><tr><td>tail</td><td>tail -10 文件名<br>tail -f 文件名<br>tail -F文件名</td><td>查看文件后10行<br>监控文件变化，按Inode查找<br>监控文件变化，按文件名查找</td><td></td></tr><tr><td>| 竖杠</td><td>head -8 文件名 | tail -1</td><td>‘|’ 将前面查询结果传递给后面，只查询第8行</td><td></td></tr><tr><td>find</td><td>find / -name 文件名</td><td>在 / 内查找叫[文件名]的文件</td><td></td></tr><tr><td>echo</td><td></td><td></td><td></td></tr><tr><td>ln</td><td>ln -s 目标文件名 链接文件名 |创建软链接，类似指针<br>ln 目标文件名 链接文件名 |创建硬链接，类似取别名</td><td>创建文件链接</td><td></td></tr><tr><td>ip addr</td><td>ip addr</td><td>ip查询</td><td></td></tr><tr><td></td><td></td><td></td><td></td></tr></tbody></table><h4 id="终端相关"><a class="markdownIt-Anchor" href="#终端相关"></a> 终端相关</h4><ul><li>快捷键 <strong>Ctrl+Alt+T</strong>：桌面打开终端</li><li><strong>exit</strong> 或 快捷键 <strong>Ctrl+D</strong>：结束终端会话</li></ul><h4 id="时间相关"><a class="markdownIt-Anchor" href="#时间相关"></a> 时间相关</h4><ul><li><strong>date</strong>：显示当前时间和日期</li><li><strong>cal</strong>：默认显示当前月份的日历</li></ul><h4 id="磁盘相关"><a class="markdownIt-Anchor" href="#磁盘相关"></a> 磁盘相关</h4><ul><li><strong>df</strong>：查看磁盘的当前可用空间</li><li><strong>free</strong>：查看内存容量</li></ul><h4 id="文件相关"><a class="markdownIt-Anchor" href="#文件相关"></a> 文件相关</h4><ul><li><strong>pwd</strong>：输出当前的工作目录名称，【print working directory】</li><li><strong>ls</strong>：列出目录内容</li><li><strong>cd</strong>：修改目录</li></ul><h4 id="tips"><a class="markdownIt-Anchor" href="#tips"></a> tips：</h4><p>焦点跟随鼠标<br>$代表普通用户；#代表超级用户</p><h3 id="linux命令-ll信息详解"><a class="markdownIt-Anchor" href="#linux命令-ll信息详解"></a> linux命令 ll信息详解</h3><p><a href="https://blog.csdn.net/dshf_1/article/details/99973236">参考文章</a></p><p><img src="/2022/03/15/linux%E6%8C%87%E4%BB%A4/image-20220106143643107.png" alt="image-20220106143643107"></p><p>第一列：文件类型</p><p>‘-’ 普通文件</p><p>‘d’ 文件夹、目录</p><p>‘l’ 链接文件，类似于windows的快捷方式</p><p>‘p’ 管理文件</p><p>‘b’ 块设备文件</p><p>‘c’ 字符设备文件</p><p>‘s’ 套接字文件</p><p>后列：文件属性</p><p>r（Read，读取权限）：对文件而言，具有读取文件内容的权限；对目录来说，具有浏览目录的权限。<br>w（Write，写入权限）：对文件而言，具有新增、修改文件内容的权限；对目录来说，具有删除、移动目录内文件的权限。<br>x（execute，执行权限）：对文件而言，具有执行文件的权限；对目录来说，该用户具有进入目录的权限。<br>另外，这里还有2个很特殊的属性，平时不怎么常见，这里也顺带解释一下：</p><p>s或S（SUID,Set UID）：可执行的文件搭配这个权限，便能得到特权，任意存取该文件的所有者能使用的全部系统资源。请注意具备SUID权限的文件，黑客经常利用这种权限，以SUID配上root帐号拥有者，无声无息地在系统中开扇后门，供日后进出使用。<br>t或T（Sticky）：/tmp和 /var/tmp目录供所有用户暂时存取文件，亦即每位用户皆拥有完整的权限进入该目录，去浏览、删除和移动文件。<br>综合起来可得，对于back_init文件，其创建者/所有者具有可读可写可执行的权限，其创建者/所有者所在的组的其他用户具有可读可写可执行的权限，其他组的其他用户则具有可读可执行但不可写的权限。</p><h3 id="type详解"><a class="markdownIt-Anchor" href="#type详解"></a> type详解</h3><p><a href="https://zhidao.baidu.com/question/376357416018438444.html?fr=iks&amp;word=Linux+type&amp;ie=gbk&amp;dyTabStr=MCwyLDMsMSw1LDQsNiw3LDgsOQ==">参考文章</a></p><p>一般情况下，type命令被用于判断另外一个命令是否是内置命令，但是它实际上有更多的用法。</p><ol><li><p>判断一个名字当前是否是alias、keyword、function、builtin、file或者什么都不是：</p><p>type ls 的输出是 ls 是 ‘ls --color=auto’ 的别名</p><p>type if 的输出是 if 是 shell 关键字</p><p>type type 的输出是 type 是 shell 内嵌</p><p>type frydsh 的输出是 bash: type: frydsh: 未找到</p></li><li><p>判断一个名字当前是否是alias、keyword、function、builtin、file或者什么都不是的另一种方法（适用于脚本编程）：</p><p>type -t ls 的输出是 alias</p><p>type -t if 的输出是 keyword</p><p>type -t type 的输出是 builtin</p><p>type -t gedit 的输出是 file</p><p>type -t frydsh 没有输出</p></li><li><p>显示一个名字的所有可能：</p><p>type -a kill 的输出是 kill 是 shell 内嵌 和 kill 是 /bin/kill</p><p>type -at kill 的输出是 builtin 和 file</p></li><li><p>查看一个命令的执行路径（如果它是外部命令的话）：</p><p>type -p gedit 的输出是 /usr/bin/gedit</p><p>type -p kill 没有输出（因为kill是内置命令）</p></li><li><p>强制搜索外部命令：</p><p>type -P kill 的输出是 /bin/kill</p></li></ol><h3 id="cp命令相关选项"><a class="markdownIt-Anchor" href="#cp命令相关选项"></a> cp命令相关选项</h3><p><a href="https://zhidao.baidu.com/question/473418058.html?fr=iks&amp;word=Linux+cp&amp;ie=gbk&amp;dyTabStr=MCwyLDMsMSw1LDQsNiw3LDgsOQ==">参考文章</a></p><p>cp命令的各选项含义如下：</p><p>- a 该选项通常在拷贝目录时使用。它保留链接、文件属性，并递归地拷贝目录，其作用等于dpR选项的组合。</p><p>- d 拷贝时保留链接。</p><p>- f 删除已经存在的目标文件而不提示。</p><p>- i 和f选项相反，在覆盖目标文件之前将给出提示要求用户确认。回答y时目标文件将被覆盖，是交互式拷贝。</p><p>- p 此时cp除复制源文件的内容外，还将把其修改时间和访问权限也复制到新文件中。</p><p>- r 若给出的源文件是一目录文件，此时cp将递归复制该目录下所有的子目录和文件。此时目标文件必须为一个目录名。</p><p>- l 不作拷贝，只是链接文件。</p><p>需要说明的是，为防止用户在不经意的情况下用cp命令破坏另一个文件，如用户指定的目标文件名已存在，用cp命令拷贝文件后，这个文件就会被新源文件覆盖，因此，建议用户在使用cp命令拷贝文件时，最好使用i选项。</p><p>例子：<br>Cp -i file1 file2 (将文档 file1 复制成 file2 . –i为提示确认。)</p><p>cp file1 dir1 将文档 file1 复制到目录 dir1 下，文件名仍为 file1.</p><p>cp /tmp/file1 . 将目录 /tmp 下的文档 file1复制到现行目录下，档名仍为 file1.</p><p>cp /tmp/file1 file2 将目录 /tmp 下的文档 file1现行目录下，档名为file2</p><p>cp -r dir1 dir2 (recursive copy) 复制整个目录.若目录 dir2 不存在，则将目录dir1，及其所有文档和子目录，复制到目录 dir2 下，新目录名称为dir1.若目录dir2不存在，则将dir1，及其所有文档和子目录，复制为目录 dir2.</p><h3 id="stat-文件属性详解"><a class="markdownIt-Anchor" href="#stat-文件属性详解"></a> stat 文件属性详解</h3><p>File：文件名</p><p>Size：大小</p><p>Blocks：块</p><p>IO Block：分配（一般为 4k=4096 ）</p><p>Device：存放在硬盘区位置</p><p>Inode：文件绝对位置</p><p>Links：静态硬连接数量</p><p>Access：文件权限</p><p>Uid：所属用户</p><p>Gid：所属组</p><p>Access：访问文件时间</p><p>Modify：文件内容发生变化时间</p><p>Change：文件权限改变时间</p><h3 id="ln-创建文件详解"><a class="markdownIt-Anchor" href="#ln-创建文件详解"></a> ln 创建文件详解</h3><p><img src="/2022/03/15/linux%E6%8C%87%E4%BB%A4/image-20220107192816485.png" alt="image-20220107192816485"></p><p>ln -s 目标文件名 链接文件名 |创建软链接，形式是 ‘l’ 链接，链接文件 Inode 属性不同，类似于指针<br>ln 目标文件名 链接文件名 |创建硬链接，形式是 ‘-’ 文件，链接文件 Inode 属性相同，类似于别名</p><h3 id="vi-和-vim-编辑器"><a class="markdownIt-Anchor" href="#vi-和-vim-编辑器"></a> VI 和 VIM 编辑器</h3><p><img src="/2022/03/15/linux%E6%8C%87%E4%BB%A4/image-20220107200548033.png" alt="image-20220107200548033"></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h3 id=&quot;linux-命令&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#linux-命令&quot;&gt;&lt;/a&gt; Linux 命令&lt;/h3&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;名字&lt;/th&gt;
+&lt;th&gt;语法&lt;/th&gt;
+&lt;th&gt;用法&lt;/th&gt;
+</summary>
+      
+    
+    
+    
+    <category term="Linux" scheme="http://rgzzplus.com/categories/Linux/"/>
+    
+    
+    <category term="Linux指令" scheme="http://rgzzplus.com/tags/Linux%E6%8C%87%E4%BB%A4/"/>
+    
+  </entry>
   
   <entry>
     <title>hexo写作</title>
