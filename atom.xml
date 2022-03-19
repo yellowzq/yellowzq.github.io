@@ -6,7 +6,7 @@
   <link href="https://www.rgzzplus.com/atom.xml" rel="self"/>
   
   <link href="https://www.rgzzplus.com/"/>
-  <updated>2022-03-18T01:47:56.275Z</updated>
+  <updated>2022-03-19T12:52:30.925Z</updated>
   <id>https://www.rgzzplus.com/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>task_struct</title>
+    <link href="https://www.rgzzplus.com/2022/03/19/task-struct/"/>
+    <id>https://www.rgzzplus.com/2022/03/19/task-struct/</id>
+    <published>2022-03-19T12:46:55.000Z</published>
+    <updated>2022-03-19T12:52:30.925Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="task_struct结构体"><a class="markdownIt-Anchor" href="#task_struct结构体"></a> task_struct结构体</h1><p>task_struct 被称为<strong>进程描述符</strong>，它定义在&lt;linux/sched.h&gt;文件中，进程描述符中包<strong>含一个具体进程的所有信息</strong>。</p><p>进程描述符中包含的数据能完整的描述一个正在执行的程序：程序打开的文件，进程的地址空间，挂起的信号，进程的状态，等等</p><p><img src="/2022/03/19/task-struct/image-20220306151727315.png" alt="image-20220306151727315"></p><h2 id="分配进程描述符"><a class="markdownIt-Anchor" href="#分配进程描述符"></a> 分配进程描述符</h2><p>Linux通过slab分配器分配 stak_struct 结构，目的是为了达到<strong>对象复用和缓存着色</strong>（注：通过预先分配和重复使用 task_struct，可以避免动态分配和释放所带来的资源消耗）。<strong>每个进程的 task_struct 存放在它们内核栈的栈尾。</strong></p><p><img src="/2022/03/19/task-struct/image-20220306154628782.png" alt="image-20220306154628782"></p><p>slab分配器在栈底（对于向下增长的栈来说）或栈顶（对于向上增长的栈来说）创建一个新的结构 struct thread_info，此结构中的 task域中存放指向该任务实际 task_struct的指针，以方便在汇编代码中计算其偏移。</p><p><img src="/2022/03/19/task-struct/image-20220306154716090.png" alt="image-20220306154716090"></p><h2 id="进程描述符的存放"><a class="markdownIt-Anchor" href="#进程描述符的存放"></a> 进程描述符的存放</h2><p>内核通过一个唯一的进程标识符（process identification value）或 PID 来表示每个进程。PID是一个最大默认值为 32768 的 int型数。它被存放在各自的进程描述符中。</p><h2 id="进程状态"><a class="markdownIt-Anchor" href="#进程状态"></a> 进程状态</h2><p>进程描述符中的 state域描述了进程的当前状态，该域的值：</p><table><thead><tr><th>状态标志（域值）</th><th>说明</th></tr></thead><tbody><tr><td>TASK_RUNNING</td><td><strong>运行</strong>，表示进程是可执行的；它或者正在执行，或者在运行队列中等待执行</td></tr><tr><td>TASK_INTERRUPTIBLE</td><td><strong>可中断</strong>，进程被阻塞，等待某些条件达成，一旦条件满足，进程就被唤醒，切换为运行状态</td></tr><tr><td>TASK_UNINTERRUPTIBLE</td><td><strong>不可中断</strong>，进程不会因为接收到信号而被唤醒切换为运行</td></tr><tr><td>TASK_ZOMBIE</td><td><strong>僵死</strong>，该进程已经结束了，但其父进程还没有释放其所获得的资源</td></tr><tr><td>TASK_STOPPED</td><td><strong>停止</strong>，进程没有投入运行，也不能投入运行</td></tr></tbody></table><p><img src="/2022/03/19/task-struct/image-20220306160507272.png" alt="image-20220306160507272"></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;task_struct结构体&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#task_struct结构体&quot;&gt;&lt;/a&gt; task_struct结构体&lt;/h1&gt;
+&lt;p&gt;task_struct 被称为&lt;strong&gt;进程描述符&lt;/strong</summary>
+      
+    
+    
+    
+    <category term="操作系统" scheme="https://www.rgzzplus.com/categories/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/"/>
+    
+    
+    <category term="task_struct" scheme="https://www.rgzzplus.com/tags/task-struct/"/>
+    
+  </entry>
   
   <entry>
     <title>免费建站</title>
