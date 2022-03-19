@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://www.rgzzplus.com/about/index.html</loc>
+    
+    <lastmod>2022-03-19</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://www.rgzzplus.com/2022/03/19/Git%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8/</loc>
     
     <lastmod>2022-03-19</lastmod>
@@ -138,15 +147,6 @@
   
   <url>
     <loc>https://www.rgzzplus.com/books/index.html</loc>
-    
-    <lastmod>2022-03-11</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.rgzzplus.com/about/index.html</loc>
     
     <lastmod>2022-03-11</lastmod>
     

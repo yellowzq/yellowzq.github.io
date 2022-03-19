@@ -1,3 +1,4 @@
+https://www.rgzzplus.com/about/index.html
 https://www.rgzzplus.com/2022/03/19/Git%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8/
 https://www.rgzzplus.com/2022/03/19/task-struct/
 https://www.rgzzplus.com/2022/03/19/Ollydebug%E5%BF%AB%E6%8D%B7%E9%94%AE/
@@ -14,7 +15,6 @@ https://www.rgzzplus.com/tags/index.html
 https://www.rgzzplus.com/repository/index.html
 https://www.rgzzplus.com/categories/index.html
 https://www.rgzzplus.com/books/index.html
-https://www.rgzzplus.com/about/index.html
 https://www.rgzzplus.com/404.html
 https://www.rgzzplus.com/
 https://www.rgzzplus.com/tags/%E6%9D%82%E8%B0%88/
