@@ -6,7 +6,7 @@
   <link href="https://www.rgzzplus.com/atom.xml" rel="self"/>
   
   <link href="https://www.rgzzplus.com/"/>
-  <updated>2022-03-19T12:52:30.925Z</updated>
+  <updated>2022-03-19T13:27:48.461Z</updated>
   <id>https://www.rgzzplus.com/</id>
   
   <author>
@@ -17,19 +17,77 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Git快速入门</title>
+    <link href="https://www.rgzzplus.com/2022/03/19/Git%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8/"/>
+    <id>https://www.rgzzplus.com/2022/03/19/Git%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8/</id>
+    <published>2022-03-19T13:12:59.000Z</published>
+    <updated>2022-03-19T13:27:48.461Z</updated>
+    
+    <content type="html"><![CDATA[<p>阅前提示：本文来自小甲鱼的<a href="https://www.bilibili.com/video/BV1bs411N7ny">极客Python之Git实用教程</a>总结，完全是我自己记得笔记，在这里分享给大家，如有不足和错误，请在评论区告诉我</p><h1 id="git-记录的是什么"><a class="markdownIt-Anchor" href="#git-记录的是什么"></a> Git 记录的是什么？</h1><p>Git 是将每个版本独立保存</p><p><img src="/2022/03/19/Git%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8/image-20220111133553859.png" alt="image-20220111133553859"></p><h1 id="工作区域-暂存区域和-git-仓库"><a class="markdownIt-Anchor" href="#工作区域-暂存区域和-git-仓库"></a> 工作区域、暂存区域和 Git 仓库</h1><p>​<strong>工作区（WORKING DIRECTORY）</strong>: 直接编辑文件的地方，肉眼可见直接操作；</p><p><strong>暂存区（STAGIN AREA）</strong>：数据（快照）暂时存放的地方；</p><p>**版本库（GIT DIRECTORT(RESPOSITORY)）：**存放已经提交的数据，push 的时候，就是把这个区的数据 push 到远程git仓库了。</p><p><img src="/2022/03/19/Git%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8/image-20220111133716264.png" alt="image-20220111133716264"></p><h1 id="git-工作流程"><a class="markdownIt-Anchor" href="#git-工作流程"></a> Git 工作流程</h1><ul><li><p>Git的工作流程一般是酱紫:</p><ol><li><p>在工作目录中添加、修改文件</p></li><li><p>将<strong>需要进行版本管理的文件</strong>放入暂存区域</p></li><li><p>将暂存区域的文件提交到Git仓库</p></li></ol></li><li><p>Git管理的文件有三种状态:</p><ul><li>已修改(modified)</li><li>已暂存(staged)</li><li>已提交(committed)</li></ul></li></ul><h1 id="实战"><a class="markdownIt-Anchor" href="#实战"></a> 实战</h1><ul><li><p>将工作目录的文件放到Git仓库只需要两步:</p><ul><li>git add 文件名   //添加文件</li><li>git commit -m &quot;你干了啥”    //提交并注释</li></ul></li><li><p>其它命令</p><ul><li>git status //查看状态</li><li>git log //查看历史提交的最终版本，即 <strong>commit实体</strong></li><li>reset  //撤回提交，即将最后一次存放到Git仓库里的文件撤回到暂存区</li><li>checkout  //从历史快照（或者暂存区域）中拷贝文件到工作目录</li></ul></li></ul><p><img src="/2022/03/19/Git%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8/image-20220111143815229.png" alt="image-20220111143815229"></p><p><img src="/2022/03/19/Git%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8/image-20220111144429661.png" alt="image-20220111144429661"></p><h1 id="几个命令的功能"><a class="markdownIt-Anchor" href="#几个命令的功能"></a> 几个命令的功能</h1><ul><li>add<ul><li>用于把工作目录的文件放入暂存区域</li></ul></li><li>commit<ul><li>用于把暂存区域的文件提交到 Git 仓库</li></ul></li><li>reset<ul><li>用于把 Git 仓库的文件还原到暂存区域</li></ul></li><li>checkout<ul><li>用于把暂存区域的文件还原到工作目录</li></ul></li></ul><h1 id="reset-命令选项危险"><a class="markdownIt-Anchor" href="#reset-命令选项危险"></a> reset 命令选项（危险）</h1><ul><li><p>git reset --mixed HEAD～</p><ul><li>移动 HEAD 的指向,将其指向上一个快照</li><li>将 HEAD 移动后指向的快照回滚到暂存区域</li></ul></li><li><p>git reset --soft HEAD～</p><ul><li>移动 HEAD 的指向,将其指向上一个快照</li></ul></li><li><p>git reset --hard HEAD~</p><ul><li>移动 HEAD 的指向,将其指向上一个快照</li><li>将 HEAD 移动后指向的快照回滚到暂存区域</li><li>将暂存区域的文件还原到工作目录</li></ul></li></ul><h2 id="reset-命令回滚快照三部曲"><a class="markdownIt-Anchor" href="#reset-命令回滚快照三部曲"></a> reset 命令回滚快照三部曲</h2><ol><li>移动 HEAD 的指向(–soft)</li><li>将快照回滚到暂存区域([–mixed]，默认)</li><li>将暂存区域还原到工作目录（–hard)</li></ol><h2 id="回滚个别文件"><a class="markdownIt-Anchor" href="#回滚个别文件"></a> 回滚个别文件</h2><ul><li>git reset 版本快照 文件名/路径<ul><li>HEAD 指针不会移动，回滚</li></ul></li><li>git reset 版本快照的 ID 号<ul><li>前滚</li></ul></li></ul><h1 id="比较"><a class="markdownIt-Anchor" href="#比较"></a> 比较</h1><h2 id="比较暂存区域与工作目录"><a class="markdownIt-Anchor" href="#比较暂存区域与工作目录"></a> 比较暂存区域与工作目录</h2><ul><li><p>git diff  //比较差异</p><p><img src="/2022/03/19/Git%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8/image-20220111162726582.png" alt="image-20220111162726582"></p></li><li><p>第二行</p><p>比较暂存区域和工作目录下的 <a href="http://README.md">README.md</a><br>a 代表暂存区域下的文件夹<br>b 代表工作区域下的文件夹</p></li><li><p>第三行</p><p>1a5af1f…20f3146 表示文件ID，<br>100644 指定文件类型和权限</p></li><li><p>第四行</p><p>— 三个减号，表示是旧文件存放在暂存区域</p></li><li><p>第五行<br>+++ 三个加号，表示是新文件存放在工作目录</p></li><li><p>第六行</p><p>中间的减号（-）代表旧文件，后面紧接着的数字代表开始行号，逗号后面的数字代表持续的行数</p></li><li><p>第七行<br>减号后面，代表删减的内容</p></li><li><p>第八行<br>加号后面，代表增加的内容</p></li><li><p>第九行<br>两个版本共有的内容</p></li><li><p>如果后面有冒号（：）代表文件内容未完全显示，需要输入命令查看或退出</p><ul><li>常用命令<ul><li>j 向下移动一行</li><li>f 向下移动一页</li><li>b 向上移动一页</li><li>d 向下移动半页</li><li>u 向上移动半页</li><li>g 跳到第一行</li><li>G 跳到最后一行</li><li>3g 跳到第3行</li><li>/ 从上往下搜索</li><li>? 从下往上搜索</li><li>/+搜索内容 按内容查找</li><li>h 显示帮助文档</li><li>q 退出</li></ul></li></ul></li></ul><h2 id="比较当前工作目录和-git-仓库中的快照"><a class="markdownIt-Anchor" href="#比较当前工作目录和-git-仓库中的快照"></a> 比较当前工作目录和 Git 仓库中的快照</h2><ul><li>git diff 快照ID</li></ul><h2 id="比较暂存区与-git-仓库中的快照"><a class="markdownIt-Anchor" href="#比较暂存区与-git-仓库中的快照"></a> 比较暂存区与 Git 仓库中的快照</h2><ul><li>git diff --cached 快照ID</li></ul><h2 id="终极奥义图"><a class="markdownIt-Anchor" href="#终极奥义图"></a> 终极奥义图</h2><p><img src="/2022/03/19/Git%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8/image-20220111171122255.png" alt="image-20220111171122255"></p><h1 id="修改最后一次提交"><a class="markdownIt-Anchor" href="#修改最后一次提交"></a> 修改最后一次提交</h1><ul><li><p>在实际开发中,你可能会遇到以下两种情景:</p><ul><li>情景一:版本刚一提交(commit）到仓库，突然想起漏掉两个文件还没有添加( add ) 。</li><li>情景二:版本刚一提交( commit）到仓库，突然想起版本说明写得不够全面，无法彰显你本次修改的重大意义…</li></ul></li><li><p>执行带 – amend 选项的 commit 提交命令, Git 就会 “更正” 最近的一次提交<br>git commit --amend</p></li></ul><h1 id="删除文件后恢复"><a class="markdownIt-Anchor" href="#删除文件后恢复"></a> 删除文件后恢复</h1><ul><li>git checkout --文件名<br>恢复已删除的文件</li></ul><h1 id="删除文件"><a class="markdownIt-Anchor" href="#删除文件"></a> 删除文件</h1><ul><li>git rm 文件名<ul><li>删除工作区域和暂存区域的文件，也就是取消跟踪，不纳入下一个版本管理，但不能删除已经提交在 git 仓库里的文件</li><li>git rm -f 文件名<ul><li>强制删除工作区域和暂存区域所有【文件名】文件，在工作目录和暂存区的同一个文件不同内容时使用</li></ul></li><li>git rm --cached 文件名<ul><li>只删除暂存区的文件</li></ul></li></ul></li><li>git reset --soft HEAD~<ul><li>soft 修改指针</li></ul></li></ul><h1 id="重命名文件"><a class="markdownIt-Anchor" href="#重命名文件"></a> 重命名文件</h1><ul><li>git mv 旧文件名 新文件名<ul><li>ren/mv 旧文件名 新文件名</li><li>git rm 旧文件名</li><li>git add 新文件名</li></ul></li></ul><h1 id="git-分支"><a class="markdownIt-Anchor" href="#git-分支"></a> Git 分支</h1><p><img src="/2022/03/19/Git%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8/image-20220111190210804.png" alt="image-20220111190210804"></p><h2 id="创建分支"><a class="markdownIt-Anchor" href="#创建分支"></a> 创建分支</h2><ul><li><p>git branch 分支名</p></li><li><p>切换分支前</p><p><img src="/2022/03/19/Git%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8/image-20220111191533654.png" alt="image-20220111191533654"></p></li></ul><h2 id="切换分支"><a class="markdownIt-Anchor" href="#切换分支"></a> 切换分支</h2><ul><li><p>git checkout 分支名</p><p>切换到feature分支后<br><img src="/2022/03/19/Git%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8/image-20220111191550366.png" alt="image-20220111191550366"></p></li></ul><h3 id="向-feature-分支添加内容后"><a class="markdownIt-Anchor" href="#向-feature-分支添加内容后"></a> 向 feature 分支添加内容后</h3><p><img src="/2022/03/19/Git%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8/image-20220111193039175.png" alt="image-20220111193039175"></p><h3 id="向-master-添加新内容后"><a class="markdownIt-Anchor" href="#向-master-添加新内容后"></a> 向 master 添加新内容后</h3><p><img src="/2022/03/19/Git%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8/image-20220111193407423.png" alt="image-20220111193407423"></p><ul><li>git log --oneline --graph --all<ul><li>以图形化显示所有分支</li></ul></li></ul><h2 id="合并和删除分支"><a class="markdownIt-Anchor" href="#合并和删除分支"></a> 合并和删除分支</h2><h3 id="实际开发中的分支"><a class="markdownIt-Anchor" href="#实际开发中的分支"></a> 实际开发中的分支</h3><p><img src="/2022/03/19/Git%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8/image-20220111194027008.png" alt="image-20220111194027008"></p><h3 id="合并分支"><a class="markdownIt-Anchor" href="#合并分支"></a> 合并分支</h3><ul><li>git merge 分支名</li></ul><h3 id="删除分支"><a class="markdownIt-Anchor" href="#删除分支"></a> 删除分支</h3><ul><li>git branch -d 分支名<ul><li>git branch --delete 分支名</li></ul></li></ul><h3 id="匿名分支"><a class="markdownIt-Anchor" href="#匿名分支"></a> 匿名分支</h3><h2 id="checkout-命令"><a class="markdownIt-Anchor" href="#checkout-命令"></a> checkout 命令</h2><h3 id="功能"><a class="markdownIt-Anchor" href="#功能"></a> 功能</h3><ol><li>从历史快照（或者暂存区域）中拷贝文件到工作目录<br>git checkout – <a href="http://README.md">README.md</a><br>加（–）是预防你恰好有一个 <a href="http://README.md">README.md</a> 的分支，产生矛盾</li><li>切换分支<br><img src="/2022/03/19/Git%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8/image-20220111201613854.png" alt="image-20220111201613854"></li></ol><h3 id="checkout-命令与-reset-命令区别"><a class="markdownIt-Anchor" href="#checkout-命令与-reset-命令区别"></a> checkout 命令与 reset 命令区别</h3><h4 id="恢复文件"><a class="markdownIt-Anchor" href="#恢复文件"></a> 恢复文件</h4><p><code>checkout</code> 命令和 <code>reset</code> 命令都可以用于恢复指定快照的指定文件，并且它们都不会改变 HEAD 指针的指向。</p><p>下面开始划重点∶</p><p>它们的区别是 <code>reset</code> 命令只将指定文件恢复到暂存区域（–mixed ），而 <code>checkout</code> 命令是同时覆盖暂存区域和工作目录。</p><p>注意∶也许你试图使用 <code>git reset --hard HEAD~README.md</code> 命令让 reset 同时覆盖工作目录，但 Git 会告诉你这是徒劳（此时 reset 不允许使用 --soft 或 --hard 选项)。</p><p>这样看来，在恢复文件方面，<code>reset</code> 命令要比 <code>checkout</code> 命令更安全一些。</p><h4 id="恢复快照"><a class="markdownIt-Anchor" href="#恢复快照"></a> 恢复快照</h4><p><code>reset</code> 命令是用来 “ 回到过去 ” 的，根据选项的不同，<code>reset</code>命令将移动 HEAD 指针 ( --soft ) -&gt;  覆盖暂存区域 ( --mixed，默认 ) -&gt;  覆盖工作目录 ( --hard )。</p><p><code>checkout</code> 命令虽说是用于切换分支，但前面你也看到了，它事实上也是通过移动 HEAD 指针和覆盖暂存区域、工作目录来实现的。</p><p>那问题来了:它们有什么区别呢?</p><p>下面开始划重点∶</p><p>第一个区别是，对于 <code>reset --hard</code> 命令来说，<code>checkout</code> 命令更安全。因为 checkout 命令在切换分支前会先检查一下当前的工作状态，如果不是 “clean” 的话，Git 不会允许你这样做；而 reset --hard 命令则是直接覆盖所有数据。</p><p>另一个区别是如何更新 HEAD 指向，<code>reset</code> 命令会移动 HEAD 所在分支的指向，而 <code>checkout</code> 命令只会移动 HEAD 自身来指向另一个分支。</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;阅前提示：本文来自小甲鱼的&lt;a href=&quot;https://www.bilibili.com/video/BV1bs411N7ny&quot;&gt;极客Python之Git实用教程&lt;/a&gt;总结，完全是我自己记得笔记，在这里分享给大家，如有不足和错误，请在评论区告诉我&lt;/p&gt;
+&lt;h1 id</summary>
+      
+    
+    
+    
+    <category term="工具" scheme="https://www.rgzzplus.com/categories/%E5%B7%A5%E5%85%B7/"/>
+    
+    
+    <category term="Git" scheme="https://www.rgzzplus.com/tags/Git/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Ollydebug快捷键</title>
+    <link href="https://www.rgzzplus.com/2022/03/19/Ollydebug%E5%BF%AB%E6%8D%B7%E9%94%AE/"/>
+    <id>https://www.rgzzplus.com/2022/03/19/Ollydebug%E5%BF%AB%E6%8D%B7%E9%94%AE/</id>
+    <published>2022-03-19T13:11:02.000Z</published>
+    <updated>2022-03-19T13:12:27.305Z</updated>
+    
+    <content type="html"><![CDATA[<table><thead><tr><th style="text-align:center">按键</th><th style="text-align:center">说明</th></tr></thead><tbody><tr><td style="text-align:center">F2</td><td style="text-align:center">下断点，也就是指定端点的地址</td></tr><tr><td style="text-align:center">F3</td><td style="text-align:center">加载一个可执行程序，进行调试分析</td></tr><tr><td style="text-align:center">F4</td><td style="text-align:center">程序执行到光标处</td></tr><tr><td style="text-align:center">F5</td><td style="text-align:center">缩小、还原当前窗口</td></tr><tr><td style="text-align:center">F7</td><td style="text-align:center">单步步入</td></tr><tr><td style="text-align:center">F8</td><td style="text-align:center">单步步过</td></tr><tr><td style="text-align:center">F9</td><td style="text-align:center">直接运行程序，遇到断点处，程序暂停</td></tr><tr><td style="text-align:center">Ctrl+F2</td><td style="text-align:center">重新运行程序到起始处，一般用于重新调试程序</td></tr><tr><td style="text-align:center">Ctrl+F9</td><td style="text-align:center">执行到函数返回处，用于跳出函数实现</td></tr><tr><td style="text-align:center">Alt+F9</td><td style="text-align:center">执行到用户代码处，用于快速跳出系统函数</td></tr><tr><td style="text-align:center">Ctrl+G</td><td style="text-align:center">输入十六进制地址，快速定位到该地址处</td></tr></tbody></table>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th style=&quot;text-align:center&quot;&gt;按键&lt;/th&gt;
+&lt;th style=&quot;text-align:center&quot;&gt;说明&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td style=&quot;text</summary>
+      
+    
+    
+    
+    <category term="工具" scheme="https://www.rgzzplus.com/categories/%E5%B7%A5%E5%85%B7/"/>
+    
+    
+    <category term="ollydebug" scheme="https://www.rgzzplus.com/tags/ollydebug/"/>
+    
+  </entry>
+  
+  <entry>
     <title>task_struct</title>
     <link href="https://www.rgzzplus.com/2022/03/19/task-struct/"/>
     <id>https://www.rgzzplus.com/2022/03/19/task-struct/</id>
-    <published>2022-03-19T12:46:55.000Z</published>
-    <updated>2022-03-19T12:52:30.925Z</updated>
+    <published>2022-03-19T12:46:50.000Z</published>
+    <updated>2022-03-19T13:27:38.600Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="task_struct结构体"><a class="markdownIt-Anchor" href="#task_struct结构体"></a> task_struct结构体</h1><p>task_struct 被称为<strong>进程描述符</strong>，它定义在&lt;linux/sched.h&gt;文件中，进程描述符中包<strong>含一个具体进程的所有信息</strong>。</p><p>进程描述符中包含的数据能完整的描述一个正在执行的程序：程序打开的文件，进程的地址空间，挂起的信号，进程的状态，等等</p><p><img src="/2022/03/19/task-struct/image-20220306151727315.png" alt="image-20220306151727315"></p><h2 id="分配进程描述符"><a class="markdownIt-Anchor" href="#分配进程描述符"></a> 分配进程描述符</h2><p>Linux通过slab分配器分配 stak_struct 结构，目的是为了达到<strong>对象复用和缓存着色</strong>（注：通过预先分配和重复使用 task_struct，可以避免动态分配和释放所带来的资源消耗）。<strong>每个进程的 task_struct 存放在它们内核栈的栈尾。</strong></p><p><img src="/2022/03/19/task-struct/image-20220306154628782.png" alt="image-20220306154628782"></p><p>slab分配器在栈底（对于向下增长的栈来说）或栈顶（对于向上增长的栈来说）创建一个新的结构 struct thread_info，此结构中的 task域中存放指向该任务实际 task_struct的指针，以方便在汇编代码中计算其偏移。</p><p><img src="/2022/03/19/task-struct/image-20220306154716090.png" alt="image-20220306154716090"></p><h2 id="进程描述符的存放"><a class="markdownIt-Anchor" href="#进程描述符的存放"></a> 进程描述符的存放</h2><p>内核通过一个唯一的进程标识符（process identification value）或 PID 来表示每个进程。PID是一个最大默认值为 32768 的 int型数。它被存放在各自的进程描述符中。</p><h2 id="进程状态"><a class="markdownIt-Anchor" href="#进程状态"></a> 进程状态</h2><p>进程描述符中的 state域描述了进程的当前状态，该域的值：</p><table><thead><tr><th>状态标志（域值）</th><th>说明</th></tr></thead><tbody><tr><td>TASK_RUNNING</td><td><strong>运行</strong>，表示进程是可执行的；它或者正在执行，或者在运行队列中等待执行</td></tr><tr><td>TASK_INTERRUPTIBLE</td><td><strong>可中断</strong>，进程被阻塞，等待某些条件达成，一旦条件满足，进程就被唤醒，切换为运行状态</td></tr><tr><td>TASK_UNINTERRUPTIBLE</td><td><strong>不可中断</strong>，进程不会因为接收到信号而被唤醒切换为运行</td></tr><tr><td>TASK_ZOMBIE</td><td><strong>僵死</strong>，该进程已经结束了，但其父进程还没有释放其所获得的资源</td></tr><tr><td>TASK_STOPPED</td><td><strong>停止</strong>，进程没有投入运行，也不能投入运行</td></tr></tbody></table><p><img src="/2022/03/19/task-struct/image-20220306160507272.png" alt="image-20220306160507272"></p>]]></content>
+    <content type="html"><![CDATA[<p>阅前提示：本文来自《LINUX内核设计与实现》第三章内容总结，如有不足和错误，请在评论区告诉我</p><h1 id="task_struct结构体"><a class="markdownIt-Anchor" href="#task_struct结构体"></a> task_struct结构体</h1><p>task_struct 被称为<strong>进程描述符</strong>，它定义在&lt;linux/sched.h&gt;文件中，进程描述符中包<strong>含一个具体进程的所有信息</strong>。</p><p>进程描述符中包含的数据能完整的描述一个正在执行的程序：程序打开的文件，进程的地址空间，挂起的信号，进程的状态，等等</p><p><img src="/2022/03/19/task-struct/image-20220306151727315.png" alt="image-20220306151727315"></p><h2 id="分配进程描述符"><a class="markdownIt-Anchor" href="#分配进程描述符"></a> 分配进程描述符</h2><p>Linux通过slab分配器分配 stak_struct 结构，目的是为了达到<strong>对象复用和缓存着色</strong>（注：通过预先分配和重复使用 task_struct，可以避免动态分配和释放所带来的资源消耗）。<strong>每个进程的 task_struct 存放在它们内核栈的栈尾。</strong></p><p><img src="/2022/03/19/task-struct/image-20220306154628782.png" alt="image-20220306154628782"></p><p>slab分配器在栈底（对于向下增长的栈来说）或栈顶（对于向上增长的栈来说）创建一个新的结构 struct thread_info，此结构中的 task域中存放指向该任务实际 task_struct的指针，以方便在汇编代码中计算其偏移。</p><p><img src="/2022/03/19/task-struct/image-20220306154716090.png" alt="image-20220306154716090"></p><h2 id="进程描述符的存放"><a class="markdownIt-Anchor" href="#进程描述符的存放"></a> 进程描述符的存放</h2><p>内核通过一个唯一的进程标识符（process identification value）或 PID 来表示每个进程。PID是一个最大默认值为 32768 的 int型数。它被存放在各自的进程描述符中。</p><h2 id="进程状态"><a class="markdownIt-Anchor" href="#进程状态"></a> 进程状态</h2><p>进程描述符中的 state域描述了进程的当前状态，该域的值：</p><table><thead><tr><th>状态标志（域值）</th><th>说明</th></tr></thead><tbody><tr><td>TASK_RUNNING</td><td><strong>运行</strong>，表示进程是可执行的；它或者正在执行，或者在运行队列中等待执行</td></tr><tr><td>TASK_INTERRUPTIBLE</td><td><strong>可中断</strong>，进程被阻塞，等待某些条件达成，一旦条件满足，进程就被唤醒，切换为运行状态</td></tr><tr><td>TASK_UNINTERRUPTIBLE</td><td><strong>不可中断</strong>，进程不会因为接收到信号而被唤醒切换为运行</td></tr><tr><td>TASK_ZOMBIE</td><td><strong>僵死</strong>，该进程已经结束了，但其父进程还没有释放其所获得的资源</td></tr><tr><td>TASK_STOPPED</td><td><strong>停止</strong>，进程没有投入运行，也不能投入运行</td></tr></tbody></table><p><img src="/2022/03/19/task-struct/image-20220306160507272.png" alt="image-20220306160507272"></p>]]></content>
     
     
       
       
-    <summary type="html">&lt;h1 id=&quot;task_struct结构体&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#task_struct结构体&quot;&gt;&lt;/a&gt; task_struct结构体&lt;/h1&gt;
-&lt;p&gt;task_struct 被称为&lt;strong&gt;进程描述符&lt;/strong</summary>
+    <summary type="html">&lt;p&gt;阅前提示：本文来自《LINUX内核设计与实现》第三章内容总结，如有不足和错误，请在评论区告诉我&lt;/p&gt;
+&lt;h1 id=&quot;task_struct结构体&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#task_struct结构体&quot;&gt;&lt;/a&gt; task</summary>
       
     
     
