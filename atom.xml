@@ -6,7 +6,7 @@
   <link href="https://www.rgzzplus.com/atom.xml" rel="self"/>
   
   <link href="https://www.rgzzplus.com/"/>
-  <updated>2022-03-29T15:11:50.186Z</updated>
+  <updated>2022-03-29T15:14:04.187Z</updated>
   <id>https://www.rgzzplus.com/</id>
   
   <author>
@@ -21,9 +21,9 @@
     <link href="https://www.rgzzplus.com/2022/03/29/ubuntu%E5%91%BD%E4%BB%A4%E8%A1%8C%E7%BC%96C%E8%AF%AD%E8%A8%80/"/>
     <id>https://www.rgzzplus.com/2022/03/29/ubuntu%E5%91%BD%E4%BB%A4%E8%A1%8C%E7%BC%96C%E8%AF%AD%E8%A8%80/</id>
     <published>2022-03-29T14:58:54.000Z</published>
-    <updated>2022-03-29T15:11:50.186Z</updated>
+    <updated>2022-03-29T15:14:04.187Z</updated>
     
-    <content type="html"><![CDATA[<p>首先在文本编辑器中编写C代码，并将名字保存为hello.c</p><p><img src="/2022/03/29/ubuntu%E5%91%BD%E4%BB%A4%E8%A1%8C%E7%BC%96C%E8%AF%AD%E8%A8%80/image-20220329230050502.png" alt="hello.c"></p><p>在<code>terminal</code>中打开<code>Documents</code>（因为我的hello.c保存在Documents中）</p><p><code>terminal</code>中输入：<code>cc hello.c</code> 编译hello.c</p><p>执行文件 ：<code>./a.out</code> （在Documents中生成可执行文件，同时也会输出)</p><p><img src="/2022/03/29/ubuntu%E5%91%BD%E4%BB%A4%E8%A1%8C%E7%BC%96C%E8%AF%AD%E8%A8%80/image-20220329231023881.png" alt="terminal"></p>]]></content>
+    <content type="html"><![CDATA[<p>首先在文本编辑器中编写C代码，并将名字保存为hello.c</p><p><img src="/2022/03/29/ubuntu%E5%91%BD%E4%BB%A4%E8%A1%8C%E7%BC%96C%E8%AF%AD%E8%A8%80/image-20220329230050502.png" alt="hello.c"></p><p>在<code>terminal</code>中打开<code>Documents</code>（因为我的hello.c保存在Documents中）</p><p><code>terminal</code>中输入：<code>cc hello.c</code> 编译hello.c</p><p>执行文件 ：<code>./a.out</code> （在Documents中生成可执行文件，同时也会输出)</p><p><img src="/2022/03/29/ubuntu%E5%91%BD%E4%BB%A4%E8%A1%8C%E7%BC%96C%E8%AF%AD%E8%A8%80/image-20220329231023881.png" alt="terminal"></p><p><a href="https://blog.csdn.net/lanyandong/article/details/80670870">详情链接</a></p>]]></content>
     
     
       
