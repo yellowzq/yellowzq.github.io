@@ -6,7 +6,7 @@
   <link href="https://www.rgzzplus.com/atom.xml" rel="self"/>
   
   <link href="https://www.rgzzplus.com/"/>
-  <updated>2022-03-26T11:13:53.716Z</updated>
+  <updated>2022-03-29T14:40:31.841Z</updated>
   <id>https://www.rgzzplus.com/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>ubuntu虚拟机磁盘拓展</title>
+    <link href="https://www.rgzzplus.com/2022/03/29/ubuntu%E8%99%9A%E6%8B%9F%E6%9C%BA%E7%A3%81%E7%9B%98%E6%8B%93%E5%B1%95/"/>
+    <id>https://www.rgzzplus.com/2022/03/29/ubuntu%E8%99%9A%E6%8B%9F%E6%9C%BA%E7%A3%81%E7%9B%98%E6%8B%93%E5%B1%95/</id>
+    <published>2022-03-29T14:34:19.000Z</published>
+    <updated>2022-03-29T14:40:31.841Z</updated>
+    
+    <content type="html"><![CDATA[<p>今天，我在 VMware 上使用 ubuntu 虚拟机时碰到了一个很棘手的问题—磁盘空间不够用了，我想很多使用 ubuntu 的小伙伴或多或少都会碰到这种情况。</p><p>然而，我搜遍了 CSDN 和百度却没有找到答案，让我很是苦恼，最终还是在B站上发现了大佬的视频，帮我解决了磁盘拓展问题。感谢<a href="https://space.bilibili.com/24100898">迪迪亚与前端与Linux</a>大佬。</p><p><a href="https://www.bilibili.com/video/BV1vv411e7kp?p=1">磁盘拓展视频链接</a></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;今天，我在 VMware 上使用 ubuntu 虚拟机时碰到了一个很棘手的问题—磁盘空间不够用了，我想很多使用 ubuntu 的小伙伴或多或少都会碰到这种情况。&lt;/p&gt;
+&lt;p&gt;然而，我搜遍了 CSDN 和百度却没有找到答案，让我很是苦恼，最终还是在B站上发现了大佬的视频，帮</summary>
+      
+    
+    
+    
+    <category term="经验交流" scheme="https://www.rgzzplus.com/categories/%E7%BB%8F%E9%AA%8C%E4%BA%A4%E6%B5%81/"/>
+    
+    
+    <category term="ubuntu" scheme="https://www.rgzzplus.com/tags/ubuntu/"/>
+    
+  </entry>
   
   <entry>
     <title>C和指针编程题--第五章</title>
