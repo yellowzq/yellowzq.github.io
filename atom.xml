@@ -6,7 +6,7 @@
   <link href="https://www.rgzzplus.com/atom.xml" rel="self"/>
   
   <link href="https://www.rgzzplus.com/"/>
-  <updated>2022-03-29T14:40:31.841Z</updated>
+  <updated>2022-03-29T14:57:06.567Z</updated>
   <id>https://www.rgzzplus.com/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>ubuntu 20.04突然无法联网</title>
+    <link href="https://www.rgzzplus.com/2022/03/29/ubuntu-20-04%E7%AA%81%E7%84%B6%E6%97%A0%E6%B3%95%E8%81%94%E7%BD%91/"/>
+    <id>https://www.rgzzplus.com/2022/03/29/ubuntu-20-04%E7%AA%81%E7%84%B6%E6%97%A0%E6%B3%95%E8%81%94%E7%BD%91/</id>
+    <published>2022-03-29T14:53:05.000Z</published>
+    <updated>2022-03-29T14:57:06.567Z</updated>
+    
+    <content type="html"><![CDATA[<p>解决方法：</p><p>在 <code>terminal</code> 下执行如下指令：</p><p>ping <a href="http://www.baidu.com">www.baidu.com</a><br>sudo service network-manager stop<br>sudo rm /var/lib/NetworkManager/NetworkManager.state<br>sudo service network-manager start</p><p>ping <a href="http://www.baidu.com">www.baidu.com</a></p><p>之后显示下图表示连接成功。按 <code>Ctrl+C</code> 即可停止。</p><p><img src="/2022/03/29/ubuntu-20-04%E7%AA%81%E7%84%B6%E6%97%A0%E6%B3%95%E8%81%94%E7%BD%91/image-20220329225535100.png" alt="ping后"></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;解决方法：&lt;/p&gt;
+&lt;p&gt;在 &lt;code&gt;terminal&lt;/code&gt; 下执行如下指令：&lt;/p&gt;
+&lt;p&gt;ping &lt;a href=&quot;http://www.baidu.com&quot;&gt;www.baidu.com&lt;/a&gt;&lt;br&gt;
+sudo service network-manag</summary>
+      
+    
+    
+    
+    <category term="经验交流" scheme="https://www.rgzzplus.com/categories/%E7%BB%8F%E9%AA%8C%E4%BA%A4%E6%B5%81/"/>
+    
+    
+    <category term="ubuntu" scheme="https://www.rgzzplus.com/tags/ubuntu/"/>
+    
+  </entry>
   
   <entry>
     <title>ubuntu虚拟机磁盘拓展</title>
