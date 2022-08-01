@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://www.rgzzplus.com/2022/08/01/Linux%E4%B8%AD%E7%9A%84%E4%BF%9D%E6%8A%A4%E6%9C%BA%E5%88%B6/</loc>
+    
+    <lastmod>2022-08-01</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://www.rgzzplus.com/2022/03/19/task-struct/</loc>
     
     <lastmod>2022-08-01</lastmod>
@@ -282,15 +291,6 @@
   
   <url>
     <loc>https://www.rgzzplus.com/2022/07/22/%E5%AE%89%E8%A3%85LNMP/</loc>
-    
-    <lastmod>2022-08-01</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.rgzzplus.com/2022/08/01/Linux%E4%B8%AD%E7%9A%84%E4%BF%9D%E6%8A%A4%E6%9C%BA%E5%88%B6/</loc>
     
     <lastmod>2022-08-01</lastmod>
     
