@@ -1,3 +1,4 @@
+https://www.rgzzplus.com/about/index.html
 https://www.rgzzplus.com/2022/08/08/Linux-shellcode%E5%BC%80%E5%8F%91%E4%B9%8B%E5%AE%9E%E6%88%98/
 https://www.rgzzplus.com/2022/08/27/%E6%95%B4%E6%95%B0%E5%AE%89%E5%85%A8/
 https://www.rgzzplus.com/2022/08/27/%E6%A0%BC%E5%BC%8F%E5%8C%96%E5%AD%97%E7%AC%A6%E4%B8%B2x86-64/
@@ -50,7 +51,6 @@ https://www.rgzzplus.com/2022/04/10/%E5%86%85%E5%AD%98%E7%9A%84%E5%A4%A7%E5%B0%8
 https://www.rgzzplus.com/2022/03/29/ubuntu%E5%91%BD%E4%BB%A4%E8%A1%8C%E7%BC%96C%E8%AF%AD%E8%A8%80/
 https://www.rgzzplus.com/2022/03/29/ubuntu-20-04%E7%AA%81%E7%84%B6%E6%97%A0%E6%B3%95%E8%81%94%E7%BD%91/
 https://www.rgzzplus.com/2022/03/10/typora%E5%BF%AB%E6%8D%B7%E9%94%AE/
-https://www.rgzzplus.com/about/index.html
 https://www.rgzzplus.com/2022/03/19/Ollydebug%E5%BF%AB%E6%8D%B7%E9%94%AE/
 https://www.rgzzplus.com/links/index.html
 https://www.rgzzplus.com/tags/index.html
