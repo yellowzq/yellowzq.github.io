@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://www.rgzzplus.com/2022/09/05/ret2text/</loc>
+    <lastmod>2022-09-11</lastmod>
+  </url>
+  <url>
     <loc>https://www.rgzzplus.com/2022/09/06/shellcode-linux-x86-64/</loc>
     <lastmod>2022-09-06</lastmod>
   </url>
@@ -46,10 +50,6 @@
   </url>
   <url>
     <loc>https://www.rgzzplus.com/2022/09/05/ret2shellcode/</loc>
-    <lastmod>2022-09-05</lastmod>
-  </url>
-  <url>
-    <loc>https://www.rgzzplus.com/2022/09/05/ret2text/</loc>
     <lastmod>2022-09-05</lastmod>
   </url>
   <url>
