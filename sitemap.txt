@@ -1,3 +1,7 @@
+https://www.rgzzplus.com/2022/09/18/%E5%9F%BA%E6%9C%ACROP/
+https://www.rgzzplus.com/2022/09/18/ret2win/
+https://www.rgzzplus.com/2022/09/18/ret2syscall/
+https://www.rgzzplus.com/2022/09/18/ret2libc/
 https://www.rgzzplus.com/2022/09/05/ret2text/
 https://www.rgzzplus.com/2022/09/06/shellcode-linux-x86-64/
 https://www.rgzzplus.com/2022/09/06/gdb%E4%B8%ADx%E7%9A%84%E7%94%A8%E6%B3%95/
@@ -130,6 +134,10 @@ https://www.rgzzplus.com/tags/%E8%AE%BA%E5%9D%9B-%E5%8D%9A%E5%AE%A2/
 https://www.rgzzplus.com/tags/%E6%95%B0%E7%BB%84%E8%B6%8A%E7%95%8C/
 https://www.rgzzplus.com/tags/glibc%E7%89%88%E6%9C%AC%E5%8F%B7/
 https://www.rgzzplus.com/tags/%E5%86%85%E6%A0%B8%E7%89%88%E6%9C%AC/
+https://www.rgzzplus.com/tags/ret2win/
+https://www.rgzzplus.com/tags/ret2libc/
+https://www.rgzzplus.com/tags/ret2syscall/
+https://www.rgzzplus.com/tags/ROP/
 https://www.rgzzplus.com/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/
 https://www.rgzzplus.com/categories/0day%E5%AE%89%E5%85%A8/
 https://www.rgzzplus.com/categories/%E9%A2%98%E5%BA%93-%E4%BD%9C%E4%B8%9A/
