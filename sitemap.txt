@@ -1,7 +1,7 @@
+https://www.rgzzplus.com/2022/09/18/ret2syscall/
 https://www.rgzzplus.com/2022/09/18/%E5%9F%BA%E6%9C%ACROP/
 https://www.rgzzplus.com/2022/09/18/ret2libc/
 https://www.rgzzplus.com/2022/09/18/ret2win/
-https://www.rgzzplus.com/2022/09/18/ret2syscall/
 https://www.rgzzplus.com/2022/09/05/ret2text/
 https://www.rgzzplus.com/2022/09/06/shellcode-linux-x86-64/
 https://www.rgzzplus.com/2022/09/06/gdb%E4%B8%ADx%E7%9A%84%E7%94%A8%E6%B3%95/
