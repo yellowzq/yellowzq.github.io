@@ -1,1 +1,1 @@
-https://www.rgzzplus.com/2022/09/18/ret2syscall/
+https://www.rgzzplus.com/2022/10/03/pwnstack/
