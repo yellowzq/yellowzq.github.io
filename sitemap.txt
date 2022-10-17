@@ -1,3 +1,5 @@
+https://www.rgzzplus.com/2022/10/17/QTCreater%E9%A3%9F%E7%94%A8%E6%8A%80%E5%B7%A7/
+https://www.rgzzplus.com/2022/10/17/QT%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/
 https://www.rgzzplus.com/2022/10/14/%E9%AB%98%E7%BA%A7%E6%90%9C%E7%B4%A2/
 https://www.rgzzplus.com/2022/10/03/PWN%E9%A2%98%E7%9B%AE%E5%8A%A0%E8%BD%BD%E6%8C%87%E5%AE%9A%E7%89%88%E6%9C%AC%E7%9A%84glibc/
 https://www.rgzzplus.com/2022/10/03/pwnstack/
@@ -144,6 +146,7 @@ https://www.rgzzplus.com/tags/%E5%B1%8F%E9%9A%9C/
 https://www.rgzzplus.com/tags/libc/
 https://www.rgzzplus.com/tags/pwnstack/
 https://www.rgzzplus.com/tags/%E6%90%9C%E7%B4%A2%E5%BC%95%E6%93%8E/
+https://www.rgzzplus.com/tags/QT/
 https://www.rgzzplus.com/categories/0day%E5%AE%89%E5%85%A8/
 https://www.rgzzplus.com/categories/%E9%A2%98%E5%BA%93-%E4%BD%9C%E4%B8%9A/
 https://www.rgzzplus.com/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/
@@ -155,3 +158,4 @@ https://www.rgzzplus.com/categories/%E4%B8%AA%E4%BA%BA/
 https://www.rgzzplus.com/categories/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/
 https://www.rgzzplus.com/categories/%E6%94%B6%E8%97%8F%E5%A4%B9/
 https://www.rgzzplus.com/categories/%E9%AB%98%E7%BA%A7%E6%90%9C%E7%B4%A2/
+https://www.rgzzplus.com/categories/c/
